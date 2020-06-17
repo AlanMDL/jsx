@@ -3,15 +3,16 @@ import ReactDOM from 'react-dom';
 
 // Coding Best Practice : use className instead of class when adding class to a label.
 const App = () => {
-  const buttonText 
+  const buttonText = { text: "Click Me" };
+  const labelText = "Label Text :) "
   return (
     <div>
-      <label className="label" for="name">
-        Enter name:
+      <label className="label" htmlFor="name">
+        { labelText }
       </label>
       <input id="name" type="text" />
       <button style={{ backgroundColor: 'blue', color: 'white' }}>
-        Submit
+        { buttonText.text }
       </button>
     </div>
   );
